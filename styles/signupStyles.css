@@ -1,0 +1,178 @@
+body{
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav.topnav{
+    background-color: #1f1f1f00;
+}
+
+footer.bottom-navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f1f1f00;
+}
+
+.links:hover{
+    border-width: 0px 10px 0px 10px;
+    border-style: double;
+    border-color: #DAA21B;
+    border-radius: 40px 40px 70px 70px;
+    background-color: #535e652c;
+}
+/* signup form */
+/* using colorful text special effect */
+/* div.heading h2{
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 0px -3px 5px grey, 1px 3px 5px yellow, -3px 0px 5px green, 5px -3px 5px blue;
+} */
+
+div.heading h2{
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 0px 1px 3px black, 1px 0px 3px white;
+}
+
+div.heading p{
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 3px black, 1px 0px 3px white;
+}
+
+/* div.heading p{
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 0px -3px 5px grey, 1px 3px 5px yellow, -3px 0px 5px green, 5px -3px 5px blue;
+} */
+
+
+div.signup {
+    background-color:#5d5959;
+    width: 600px;
+    max-width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.input{
+    background-color: #a09c9c9e;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    display: flex;
+}
+input{
+    background-color: transparent;
+    border: 0;
+    width: 80%;
+    outline: 0;
+    padding: 18px 15px;
+    color: #fff;
+}
+
+.input i{
+    color:#5d5959;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+div.input span{
+    margin: 0 auto;
+}
+.submitButton{
+    width: 80%;
+    background-color: #3a3c41;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+ 
+
+/* button
+{
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #cecaca;
+} */
+
+button{
+    padding: 1em;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #cecaca;
+    font-family: 'Poppins', sans-serif;
+  }
+
+button:hover{
+    box-shadow: 0px 5px 10px 0px rgb(34, 33, 33);
+    color: #817e7e;
+}
+
+/* hide input number arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* change placeholder color */
+/* this is the way to target an attribute of a html element through css */
+::placeholder{
+    color: white;
+}
+
+/* firefox */
+:-moz-placeholder{
+    color: white;
+}
+
+/* internet explorer 10-11 */
+:-ms-input-placeholder{
+    color: white;
+}
+
+/* media querry for smaller screens */
+@media screen and (max-width: 700px){
+    div.signup {
+        position: relative;
+        top: 350px;
+        max-width: 80%;
+    }
+
+    footer.bottom-navbar{
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        background-color: #1f1f1f00;
+        margin-top: 10em; /*for the scroll effect so that the bottom nav bar does not collide with the sign-up form */
+    }
+    input{
+        height: 10px;
+    }
+}

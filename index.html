@@ -27,13 +27,47 @@
                 
 
           <!-- stylesheet  -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- for drop text animation -->
+    <style>
+        @keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    65% {
+        transform: translateY(-17px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+nav.topnav .links{
+    animation: drop 0.7s linear forwards 0.2s;
+}
+    </style>
 </head>
 <body>
+    <!-- class = "font-effect-fire-animation" -->
         <nav class = "topnav" id = "myTopnav">
-            <a class = "font-effect-fire-animation" href="">Vinyl Vault</a>
+            <!-- some inline css used for logo box text-shadow -->
+            <a style="text-shadow: 1px 0px 0px #3a3c41, 1px 2px 0 #3a3c41; background-color: #DAA21B; border-radius: 60px;
+            margin: 5px 0 10px 5px;padding: 10px;"href="index.html">Vinyl Vault</a>
 
             <a class = "links" href=""><i class="fa-solid fa-comment"></i> About Us</a>
+
+            <a class = "links" href="signUp.html"><i class="fa-solid fa-user"></i> Sign Up</a>
 
             <a class = "links" href=""><i class = "fa-solid fa-envelope"></i> Contact Us</a>
 
@@ -57,14 +91,16 @@
 
     <section class = "productList">
 
-        <div><h1 class = "align-center" style = "color: #f2f2f2;">Latest Arrivals</h1></div>
+        <div><h1 class = "align-center" style = "color: rgb(75, 70, 70); font-size: xx-large;
+        font-family: helvetica;
+  text-shadow: 1px 2px 0px rgb(125, 120, 120);">Latest Arrivals</h1></div>
         
         <div class = "product-container">
             <!-- first product -->
             <div class = "card">
                 <div class ="title">Product 1</div>
                 <div class = "pImg">
-                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img src="styles/images/wallpaperflare.com_wallpaper.jpg" alt="">
                 </div>
                 <div class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci soluta, necessitatibus </div>
                 <button class = "buy-button">Buy Now</button>
@@ -74,7 +110,7 @@
             <div class = "card">
                 <div class ="title">Product 2</div>
                 <div class = "pImg">
-                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img src="styles/images/wallpaperflare.com_wallpaper.jpg" alt="">
                 </div>
                 <div class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci soluta, necessitatibus </div>
                 <button class = "buy-button">Buy Now</button>
@@ -84,7 +120,7 @@
             <div class = "card">
                 <div class ="title">Product 3</div>
                 <div class = "pImg">
-                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img src="styles/images/wallpaperflare.com_wallpaper.jpg" alt="">
                 </div>
                 <div class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci soluta, necessitatibus </div>
                 <button class = "buy-button">Buy Now</button>
@@ -94,7 +130,7 @@
             <div class = "card">
                 <div class ="title">Product 4</div>
                 <div class = "pImg">
-                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img src="styles/images/wallpaperflare.com_wallpaper.jpg" alt="">
                 </div>
                 <div class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci soluta, necessitatibus </div>
                 <button class = "buy-button">Buy Now</button>
@@ -104,7 +140,7 @@
             <div class = "card">
                 <div class ="title">Product 5</div>
                 <div class = "pImg">
-                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img src="styles/images/wallpaperflare.com_wallpaper.jpg" alt="">
                 </div>
                 <div class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci soluta, necessitatibus </div>
                 <button class = "buy-button">Buy Now</button>
@@ -114,7 +150,7 @@
             <div class = "card">
                 <div class ="title">Product 6</div>
                 <div class = "pImg">
-                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img src="styles/images/wallpaperflare.com_wallpaper.jpg" alt="">
                 </div>
                 <div class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci soluta, necessitatibus </div>
                 <button class = "buy-button">Buy Now</button>

@@ -28,21 +28,25 @@
 
           <!-- stylesheet  -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- embedded css to override the external css2
+
+    <!-- internal css to override the external css2
     css modification according to page -->
     <style>
         body{
-            background-image: url("images/testImg.png");
+            background-image: url("images/aboutImg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
         }
         footer.bottom-navbar{
             position: fixed;
             bottom: 0 ;
             width: 100%;
-            background-color: rgba(31,31,31,0.5)
+            background-color: rgba(31,31,31,0);
         }
         nav.topnav{
-            background-color: rgba(31,31,31,0.5);
+            background-color: rgba(31,31,31,0);
         }
         .links:hover{
             border-top: 2px solid yellow;
