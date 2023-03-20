@@ -17,6 +17,8 @@ nav.topnav{
   top: 0;
   z-index: 2;
   overflow: hidden;
+  /* set a new height for the top nav */
+  height: 70px;
 }
 
 .topnav a{
@@ -27,7 +29,8 @@ nav.topnav{
   color: #f2f2f2;
   text-align: center;
   display: block;
-  padding-bottom: 35px;
+  padding-bottom: 25px;/*added new bottom padding for  */
+  padding-top: 25px;
 }
 
 .topnav a:first-child{
@@ -39,7 +42,11 @@ nav.topnav{
 }
 
 .links:hover{
-  background-color: #535E65;
+  border-width: 0px 10px 0px 10px;
+  border-style: double;
+  border-color: #DAA21B;
+  border-radius: 40px 40px 70px 70px;
+  background-color: #535e652c;
 }
 
 section.image{
