@@ -29,7 +29,7 @@ nav.topnav{
   color: #f2f2f2;
   text-align: center;
   display: block;
-  padding-bottom: 25px;/*added new bottom padding */
+  padding-bottom: 25px;/*added new bottom padding for  */
   padding-top: 25px;
 }
 
@@ -176,6 +176,16 @@ a{
 }
 
 /* media querry for smaller screens */
+@media all and (max-width: 800px) {
+  .product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 25px;
+    grid-template-rows: auto;
+  }
+}
+
 @media all and (max-width: 600px) {
   footer.bottom-navbar ul li{
     display: block;
@@ -187,12 +197,14 @@ a{
 
   .product-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-gap: 25px;
     grid-template-rows: auto;
   }
 }
+
+
 
 .topnav .icon{
   display: none;
